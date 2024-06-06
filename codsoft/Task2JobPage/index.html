@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Job Board</h1>
+      
+    </header>
+    <main>
+       
+        <section id="home" class="visible-section">
+            <h2>Featured Jobs</h2>
+            <h1> This might finds you the way of your future </h1>
+            <ul>
+                
+
+
+                <li>
+                    <h3>Front-end</h3>
+                    <p>CompanySecureNet</p>
+                    <p>Kanada, CA</p>
+                    <button onclick="showJobDetails('Data Analyst', 'Company SecureNet', 'San Francisco, CA', 'We are seeking a talented Data Analyst to join our team at Company XYZ. The successful candidate will be responsible for collecting, processing, and analyzing data to help inform business decisions and strategies.')">View Details</button>
+                </li>
+
+
+                <li>
+                    <h3>HR-Specialist</h3>
+                    <p>Company : PeopleFirst</p>
+                    <p>Japan</p>
+                    <button onclick="showJobDetails('HR-Specialist', 'PeopleFirst', 'Japan', 'Manages recruitment, employee relations, and HR policies to support the organization’s workforce..')">View Details</button>
+                </li>
+
+
+                <li>
+                    <h3>IT Project Manager</h3>
+                    <p>Company ProjectPros</p>
+                    <p>Philadelphia, PA</p>
+                    <button onclick="showJobDetails('IT Project Manager', 'Company ProjectPros  ', 'Philadelphia, PA', 'Manages IT projects from inception to completion, ensuring they meet deadlines, budgets, and specifications.')">View Details</button>
+                </li>
+
+
+                <li>
+                    <h3>Business Analyst</h3>
+                    <p>Company: Business Solutions Co.</p>
+                    <p> Los Angeles, CA</p>
+                    <button onclick="showJobDetails('Business Analyst', 'Company: Business Solutions Co.  ', ' Los Angeles, CA', 'Analyzes business processes and requirements to recommend technology solutions that improve efficiency.')">View Details</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Technical Support Specialist</h3>
+                    <p>Company: HelpDesk Corp.</p>
+                    <p>Atlanta, GA</p>
+                    <button onclick="showJobDetails('Technical Support Specialist', 'Company: HelpDesk Corp. ', 'Atlanta, GA', 'Provides technical support and troubleshooting assistance to end-users and clients.')">View Details</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Marketing Manager</h3>
+                    <p>Company: MarketMinds</p>
+                    <p>Dallas, TX</p>
+                    <button onclick="showJobDetails('Marketing Manager', 'Company: MarketMinds ', 'Dallas, TX', ' Develops and executes marketing strategies to promote products and services effectively.')">View Details</button>
+                </li>
+                
+                </li><li>
+                    <h3>Cybersecurity Analyst</h3>
+                    <p>Company: SecureShield</p>
+                    <p>Washington, DC</p>
+                    <button onclick="showJobDetails('Cybersecurity Analyst', 'Company: SecureShield', 'Washington, DC', 'Protects an organization’s data and systems from cyber threats through proactive monitoring and defense strategies.')">View Details</button>
+
+                </li>
+
+                <li>
+                    <h3>Software Developer</h3>
+                    <p>Company ABC</p>
+                    <p>New York, NY</p>
+                    <button onclick="showJobDetails('Software Developer', 'Company ABC', 'New York, NY', 'We are looking for a skilled and motivated Software Developer to join our dynamic team at Company ABC. The ideal candidate will be responsible for developing high-quality applications, analyzing user requirements, and ensuring the smooth functioning of software systems .')">View Details</button>
+
+                </li>
+                <li>
+                    <h3>Data Analyst</h3>
+                    <p>Company XYZ</p>
+                    <p>San Francisco, CA</p>
+                    <button onclick="showJobDetails('Data Analyst', 'Company XYZ', 'San Francisco, CA', 'We are seeking a talented Data Analyst to join our team at Company XYZ. The successful candidate will be responsible for collecting, processing, and analyzing data to help inform business decisions and strategies.')">View Details</button>
+                </li>
+
+
+                
+
+
+            </ul>
+        </section>
+
+        <section id="job-listings" class="hidden">
+            <h2>Available Jobs</h2>
+            <form id="search-form">
+                <input type="text" id="search-query" placeholder="Search jobs...">
+                <button type="submit">Search</button>
+            </form>
+            <ul>
+                
+
+
+
+                <li>
+                    <h3>Front-end</h3>
+                    <p>Company XYZ</p>
+                    <p>Kanada, CA</p>
+                    <button onclick="showJobDetails('Data Analyst', 'Company XYZ', 'San Francisco, CA', 'We are seeking a talented Data Analyst to join our team at Company XYZ. The successful candidate will be responsible for collecting, processing, and analyzing data to help inform business decisions and strategies.')">View Details</button>
+                </li>
+
+
+                <li>
+                    <h3>HR-Specialist</h3>
+                    <p>Company :Company: PeopleFirst</p>
+                    <p>Japan</p>
+                    <button onclick="showJobDetails('HR-Specialist', 'PeopleFirst', 'Japan', 'Manages recruitment, employee relations, and HR policies to support the organization’s workforce..')">View Details</button>
+                </li>
+
+
+                <li>
+                    <h3>IT Project Manager</h3>
+                    <p>Company ProjectPros</p>
+                    <p>Philadelphia, PA</p>
+                    <button onclick="showJobDetails('IT Project Manager', 'Company ProjectPros  ', 'Philadelphia, PA', 'Manages IT projects from inception to completion, ensuring they meet deadlines, budgets, and specifications.')">View Details</button>
+                </li>
+
+
+                <li>
+                    <h3>Business Analyst</h3>
+                    <p>Company: Business Solutions Co.</p>
+                    <p> Los Angeles, CA</p>
+                    <button onclick="showJobDetails('Business Analyst', 'Company: Business Solutions Co.  ', ' Los Angeles, CA', 'Analyzes business processes and requirements to recommend technology solutions that improve efficiency.')">View Details</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Technical Support Specialist</h3>
+                    <p>Company: HelpDesk Corp.</p>
+                    <p>Atlanta, GA</p>
+                    <button onclick="showJobDetails('Technical Support Specialist', 'Company: HelpDesk Corp. ', 'Atlanta, GA', 'Provides technical support and troubleshooting assistance to end-users and clients.')">View Details</button>
+                </li>
+                
+                
+                <li>
+                    <h3>Marketing Manager</h3>
+                    <p>Company: MarketMinds</p>
+                    <p>Dallas, TX</p>
+                    <button onclick="showJobDetails('Marketing Manager', 'Company: MarketMinds ', 'Dallas, TX', ' Develops and executes marketing strategies to promote products and services effectively.')">View Details</button>
+                </li>
+
+
+            </li><li>
+                <h3>Cybersecurity Analyst</h3>
+                <p>Company: SecureShield</p>
+                <p>Washington, DC</p>
+                <button onclick="showJobDetails('Cybersecurity Analyst', 'Company: SecureShield', 'Washington, DC', 'Protects an organization’s data and systems from cyber threats through proactive monitoring and defense strategies.')">View Details</button>
+
+            </li>
+
+
+
+            <li>
+                <h3>Software Developer</h3>
+                <p>Company ABC</p>
+                <p>New York, NY</p>
+                <button onclick="showJobDetails('Software Developer', 'Company ABC', 'New York, NY', 'We are looking for a skilled and motivated Software Developer to join our dynamic team at Company ABC. The ideal candidate will be responsible for developing high-quality applications, analyzing user requirements, and ensuring the smooth functioning of software systems .')">View Details</button>
+
+            </li>
+            <li>
+                <h3>Data Analyst</h3>
+                <p>Company XYZ</p>
+                <p>San Francisco, CA</p>
+                <button onclick="showJobDetails('Data Analyst', 'Company XYZ', 'San Francisco, CA', 'We are seeking a talented Data Analyst to join our team at Company XYZ. The successful candidate will be responsible for collecting, processing, and analyzing data to help inform business decisions and strategies.')">View Details</button>
+            </li>
+
+            </ul>
+            <button onclick="showSection('home')">Back to Home</button>
+        </section>
+
+        <section id="job-detail" class="hidden">
+            <h2 id="job-title">Job Title</h2>
+            <p id="job-company">Company: XYZ</p>
+            <p id="job-location">Location: Andhra pradesh, USA,hyderbad , bengalur </p>
+            <p id="job-description">Description: Lorem ipsum dolor sit amet...</p>
+            <button onclick="showApplicationForm()">Apply Now</button>
+            <button onclick="showSection('job-listings')">Back to Job Listings</button>
+        </section>
+
+        <section id="application-form" class="hidden">
+            <h2>Application Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="college">College:</label>
+                <input type="text" id="college" name="college" required>
+
+                <label for="year of pass out">year of pass out:</label>
+                <input type="number" id="year of pass out" name="year of pass out" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+
+                <label for="Description">Why do you want to choose this company </label>:</label>
+                <input type="text" id="Why do you want to choose this company" name="Why do you want to choose this company" required>
+
+                <button type="submit">Submit Application</button>
+            </form>
+            <button onclick="showSection('job-detail')">Back to Job Details</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Job Board</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
